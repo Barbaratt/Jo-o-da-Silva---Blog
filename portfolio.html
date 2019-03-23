@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<meta charset = "utf-8">
+<html>
+    <head>
+        <title>Portfólio - João da Silva</title>
+        <link rel = "link" href = "favicon.png">
+        <link rel = "stylesheet" href = "reset.css">
+        <link rel = "stylesheet" href = "roupas.css">
+        <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans+Condensed:300">
+    </head>
+    <body>
+        <main>
+            <h1>Portfólio</h1>
+            <div>
+            <p>Veja abaixo a lista dos meus projetos mais relevantes</p> 
+                <br>
+                <ul class = "portfolio">
+                    <li>
+                        <a href = "http://www.bmw.com.br">
+                        <figure>
+                            <img src = "C:\Users\Ba_ka\Downloads\Alura - Programação\Curso HTML e CSS\Portifólio\bmw.png" alt = "Meu projeto para a BMW">
+                        </figure><figcaption>BMW.com: reformulação de design e implementação</figcaption></a>
+                    </li>
+                    <li>    <a href = "http://www.uol.com.br">
+                            <figure>
+                            <img src = "C:\Users\Ba_ka\Downloads\Alura - Programação\Curso HTML e CSS\Portifólio\uol.png" alt = "Meu projeto para a Uol">
+                        </figure><figcaption>Minha reformulação para a UOL, envolvendo CSS e Java</figcaption></a>
+                    </li>
+                    <li>
+                        <a href = "http://www.ibm.com">
+                        <figure>       
+                            <img class = "imagem-ibm" src = "C:\Users\Ba_ka\Downloads\Alura - Programação\Curso HTML e CSS\Portifólio\ibm.png" alt = "Meu projeto para IBM">
+                        </figure><figcaption>Design Automobilistico: como isso influencia para os clientes</figcaption></a>
+                    </li>
+                    <li>
+                        <a href = "http://www.g1.globo.com.br">
+                        <figure>
+                            <img src = "C:\Users\Ba_ka\Downloads\Alura - Programação\Curso HTML e CSS\Portifólio\g1.png" alt = "Meu projeto para Globo G1">
+                        </figure><figcaption>Site de noticiais com seu novo layout e cores para atrair leitores.</figcaption></a>
+                    </li>
+                    <li>
+                        <a href = "http://www.terra.com.br">
+                        <figure>
+                            <img src = "C:\Users\Ba_ka\Downloads\terra.png" alt = "Meu projeto para o site de notícias da Terra">
+                        </figure><figcaption>Site de variedades que harmoniza seu conteúdo com o layout.<figcaption.</a>
+                        </li>
+                        <br><br><br><br><br><br>
+            </ul>
+        </main>
+    </div>
+    
+            <img class="imagem-joao" src="eu.jpg" alt = "Foto do João da Silva">
+            <aside class= "navegacao-site">
+                <h1>João da Silva</h1> 
+                    <nav class = "nomes">
+                        <ul>
+                            <b>.</b><li><a href = "home.com"> Home</a></li>
+                            <b>.</b><li><a href = "portfolio.com"> Portfólio</a></li>
+                            <b>.</b><li><a href = "sobremim.com"> Sobre Mim</a></li>
+                            <b>.</b><li><a href = "blog.com"> Blog</a></li>
+                            <b>.</b><li><a href = "contato.com"> Contato</a></li>
+                        </ul>
+                    </nav>
+                        <ul class = "icones-sociais">
+                    <li>
+                        <a href = "https://github.com/git-joaodasilva" class = Github data-tooltip="Veja meus projetos"> Github</a>
+                    </li>
+                    <li>
+                        <a href= "https://twitter.com/twitter-joaodasilva" class = Twitter data-tooltip="Siga-me no Twitter"> Twitter</a>
+                    </li>
+                    <li>
+                        <a href = "https://br.linkedin.com/pub/linkedin-joao-da-silva/32/4/508" class = Linkedin data-tooltip="Veja meu currículo"> Linkedin</a>
+                    </li>
+                        </ul>
+            </aside>
+
+            <div>
+                <form>
+                <!-- o id no input é para criar a caixinha de preenchimento -->
+                <p>Contato</p>
+                <fieldset>
+                    <legend>Seus Dados</legend>
+                    <label for = "ID">Nome:</label><br>
+                    <input id="submit" name="submit" required placeholder="Seu Nome Aqui" required autofocus>
+                    <br>
+                    <label for= "Email">E-Mail:</label><br>
+                    <input id="submit" name="email" required placeholder="Seu Email@.com" type="email"required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Assunto:</legend>
+                    <label>
+                     <select name="Assunto">
+                         <option value ="none">Nenhum</option>
+                         <option value ="consult">Consultoria</option>
+                         <option value ="blog">Blog</option>
+                         <option value ="other">Outro</option>
+                     </select>
+                    </label>
+                </fieldset>
+
+               <label for = "mensagem">Mensagem:</label><br>
+               <textarea id="mensagem" rows="6" cols="30" placeholder="Insira aqui sua mensagem"></textarea><br>
+               <button class="botão" type="submit"><i>Enviar Mensagem</i></button>
+            </form>
+            </div>
+
+
+            <footer>
+                &copy; João da Silva 2019
+            </footer>
+    </body>
+</html>

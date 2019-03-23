@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>João da Silva - Desenvolvedor Web</title>
+    <link rel="shortcut icon" href="C:\Users\Ba_ka\Downloads\Alura - Programação\Curso HTML e CSS\Projeto\favicon.png">
+    <link rel="stylesheet" href="C:\Users\Ba_ka\Downloads\Alura - Programação\Curso HTML e CSS\Projeto\reset.css">
+    <link rel="stylesheet" href="C:\Users\Ba_ka\Downloads\Alura - Programação\Curso HTML e CSS\CursoHTML-master\css\site.css">
+    <link rel="stylesheet" href="C:\Users\Ba_ka\Downloads\Alura - Programação\Curso HTML e CSS\index\index.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+    <link rel="stylesheet" href="C:\Users\Ba_ka\Downloads\Alura - Programação\Open_Sans_Condensed\OpenSansCondensed-Bold.ttf">
+    <link rel="stylesheet" href="C:\Users\Ba_ka\Downloads\Alura - Programação\Crimson_Text\CrimsonText-Italic.ttf">
+</head>
+<body>
+    <header class="titulo-principal">
+        <img class="foto-home" src="C:\Users\Ba_ka\Downloads\Alura - Programação\Curso HTML e CSS\Projeto\eu.jpg" alt="Foto de João da Silva">
+        <h1>João da Silva</h1>
+        <p class="subtitulo-principal">Desenvolvedor web</p>
+        <ul class = "palavras-home">
+        <li class = "palavra-home eficiencia">Eficiência</li>
+        <li class = "palavra-home boas-praticas">Boas Práticas</li>
+        <li class = "palavra-home codigo-limpo">Código Limpo</li>
+        <li class = "palavra-home css3">CSS 3</li>
+        <li class = "palavra-home html5">HTML 5</li>
+        <li class = "palavra-home javascript">JavaScript</li>
+        <li class = "palavra-home acessibilidade">Acessibilidade</li>
+        <li class = "palavra-home agilidade">Agilidade</li>
+        <li class = "palavra-home responsivo">Responsivo</li>
+        <a class = "banner-twitter" href = "http://twitter.com/joaodasilva">Siga-me no Twitter</a>
+    </ul>
+    </header>
+    <main>
+        <section class="secao-inicio saudacao">
+            <p class="saudacao"><span class="saudacao-inicio">Olá,</span> meu nome é <strong>João da Silva</strong>
+            <span class="saudacao-ultima-linha">e eu construo <em>sites maravilhosos</em></span></p>
+            <a class="botao-index" href="C:\Users\Ba_ka\Downloads\Alura - Programação\Curso HTML e CSS\CursoHTML-master\bio.html">
+            Conheça mais um pouco sobre mim</a>
+        </section>
+        <section class="secao-inicio trabalhos">
+            <h2>Trabalhos</h2><br><br><br><br>
+            <ul>
+                <li><img src="C:\Users\Ba_ka\Downloads\Alura - Programação\Curso HTML e CSS\CursoHTML-master\img\bmw.png" alt="Site da BMW"></li>
+                <li><img src="C:\Users\Ba_ka\Downloads\Alura - Programação\Curso HTML e CSS\CursoHTML-master\img\ibm.png" alt="Site da IBM"></li>
+                <li><img src="C:\Users\Ba_ka\Downloads\Alura - Programação\Curso HTML e CSS\CursoHTML-master\img\uol.png" alt="Site da UOL"></li>
+            </ul>
+            <a class="botao-index" href="C:\Users\Ba_ka\Downloads\Alura - Programação\Curso HTML e CSS\CursoHTML-master\portfolio.html">Veja mais</a>
+        </section>
+        <section class="secao-inicio">
+            <h2>Blog</h2>
+            <small>Últimos posts</small>
+            <ol>
+                <li class = "mais-recente">
+                    <a href="C:\Users\Ba_ka\Downloads\Alura - Programação\Curso HTML e CSS\CursoHTML-master\blog.html">O essencial de
+                    design responsivo</a>
+                </li>
+                <li>
+                    <a href="blog.html">Por que fazer páginas acessíveis?</a>
+                    <p class = "inicio-post">Design responsivo tem cada vez sido mais...</p>
+                </li>
+                <li>
+                    <a href="blog.html">JavaScript não obstrusivo</a>
+                </li>
+            </ol>
+            <a class="botao-index" href="blog.html">Veja mais</a>
+        </section>
+    </main>
+    <!-- O form serve para criar um formulário, ou seja
+    tudo que for imbutido nessa "tag"
+    o label, serve para você dar a caracteristica do fator
+    seja para nome, telefone, mensagem, e ae o input é 
+    a alma do fator, nele você vai definir, tanto que há
+    opções como radio, entre outros 
+    no caso, quando for input type, não há como por nome
+    AE, tem que por input id (é, aquele id foda que só
+    pode uma vez, mas pelo no input pode vários kk-->
+
+    <!-- O placeholder permite que as frases escritas
+        no HTML ("Seu nome aqui", por exemplo)
+        apareçam nos campos do formulário. Quando
+        clicamos elas não impedem a escrita e
+        apagam-se quando começamos a escrever. -->
+
+<ul class = "contato">Contato</ul>
+<div>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+        <label class=com-icone for="ID" >Nome Completo</label><br>
+        <input id="submit" name="Submit" placeholder="Seu Nome Aqui" autofocus pattern="[A-Z-a-z-0-9 ']{4,}"><br>
+        <!-- Para o caso do pattern, quando for por exemplo, de B para E, você coloca B-E, para indicar
+        a escala que corre, já no caso de simbolos, espaço e tals, não precisa do traço -->
+        <label for="numeros">Telefone</label><br>
+        <input id="submit" name="numeros" title="Preencha somente com Números" placeholder="Insira seu Número de Telefone" pattern="[0-9]"><br>
+        <label  class=com-icone for="Email">Email</label><br>
+        <input id="email" name= "E-mail" placeholder="Seu Email@.com" type="email"required>
+    </fieldset>
+
+        <!-- Quando tu faz labels separados
+        você divide a categoria uma por uma, ou seja,
+        cada assunto fica separadamente -->
+
+        <!-- Os nomes que demos para cada assunto são
+            apenas rótulos que aparecem na página.
+            O navegador ainda não os associa com o
+            valor que eles devem ter e, por sua vez,
+            não os envia para o servidor.
+            Então precisamos do atributo "value": -->
+
+        <fieldset>  
+            <legend>Assunto:</legend> 
+        <label>
+        <input type="radio" name="assunto" value="consult">
+        Consultoria
+        </label>
+
+        <label>
+            <input type="radio" name="assunto" value="blog" pattern="[A-Z-a-z-0-9]*{9,}">
+            <!-- No atributo pattern, podemos especificar
+                qual padrão deve seguir um determinado
+                campo, para que o usuário preencha-o corretamente,
+            Repare que colocamos os conjuntos de caracteres
+            permitidos entre colchetes (letras maiúsculas,
+            minúsculas e dígitos, nessa ordem) e um asterisco
+            depois. Esse asterisco significa que podemos
+            repetir quantas vezes quisermos um caractere desse conjunto. -->
+            Blog
+        </label>
+
+        <label>
+            <input type="radio" name="assunto" value="other">
+            Outro
+        </label>
+    </fieldset> 
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" cols="30" rows="6"></textarea>
+        <button type="submit">Enviar<strong> Para Mim</strong></button>
+    </form>
+</div>
+
+    <footer>
+        <h2>Vamos conversar?</h2>
+        <p>Você pode entrar em contato comigo <a href="contato.html">por e-mail</a> ou pelo telefone <a href="tel:+551234567890">
+        (12) 3456-7890</a></p>
+    </footer>
+</body>
+</html>

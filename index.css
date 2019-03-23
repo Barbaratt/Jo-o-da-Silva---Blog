@@ -1,0 +1,619 @@
+
+
+
+/* div { 
+    width: -webkit-calc(50% - 10px);
+    width: -moz-calc(50% - 10px);
+    width: calc(50% - 10px);
+}
+É como se fosse um math.round no java, para poder fazer contas e calculos no css !
+Essa é a adaptação para cada navegador, não esquecendo de sempre por um básico, para outros navegadores também, para funcionar
+*/
+
+    em {
+        animation: flutua 3s infinite;
+        animation-delay: 1s;
+        animation-direction: alternate;
+        position: relative;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes flutua {
+        from {
+            top: -5px;
+        }
+        to {
+            top: 5px;
+        }
+    }
+
+    em:hover {
+        animation-play-state: paused;
+    }
+
+    span::first-letter {
+        font-size: 12em;
+    }
+
+
+    .banner-twitter
+    {
+        width: 14em;
+        line-height: 1.2;
+        padding: 1em 0;
+        box-sizing: border-box;
+
+        text-align: center;
+        text-decoration: none;
+        background-color: #3C1D3D;
+        color: white;
+        border: .25em solid black;
+
+        font-size: 0.5em;
+        font-family: "Open Sans Condensed", sans-serif;
+        text-transform: capitalize;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform-origin: 0 0;
+        transform: translate(6.5754em, -2.4749em) rotate(45deg);
+        /*  transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg); */
+        animation: aparece 0.5s;
+        animation-delay: aparece 2s;
+        animation-fill-mode: both;
+    }
+
+        @keyframes aparece /*Isso me lembra o function em java*/ {
+            from {
+                opacity: 0;
+                transform: scale(0.001);
+            }
+
+    }
+
+
+    .mais-recente {
+        position: relative;
+        background-color: #FFF;
+        width:30%;
+        height:10%;
+        background-color: #FFF;
+    }
+
+    .inicio-post {
+        background-color: #FFF;
+        position: absolute;
+        color: black;
+        top: 4em;
+        right: 60em;
+        height: 6em;
+        padding:1.5em;
+        display:block;
+    }
+
+    header {
+        position: relative;
+    }
+
+    .palavra-home {
+        font-family: cursive;
+        position: absolute;
+        font-size: 90%;
+        font-weight: bold;
+        color: rgba(255, 127, 127, .5);
+    }
+
+    .palavras-home {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .eficiencia {
+
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px) scale(0.25);
+        /* -webkit-transform: rotate(-5deg); */
+                /* transform: rotate(-5deg); */
+
+    }
+
+    .boas-praticas {
+        top: 70%;
+        left: 20%;
+        -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(10deg) scale(.25);
+                transform: translate(-50%, -50%) translateZ(1px) rotate(10deg) scale(.25);
+        opacity: .6;
+        /* transform: skew(10rad); */
+
+    }
+
+    .codigo-limpo {
+        top: 45%;
+        left: 25%;
+        -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg) scale(.25);
+                transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg) scale(.25);
+        opacity: .6;
+        /* transform: scale(30deg); */
+
+    }
+
+    .css3 {
+        top: 55%;
+        left: 35%;
+        -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(5deg) scale(.25);
+                transform: translate(-50%, -50%) translateZ(2px) rotate(5deg) scale(.25);
+        opacity: .6;
+        /* transform: matrix(0.680,0.5,-0.5,0.680,10,30); */
+        /* Não esquecer que ao colocar valores em escala decimal,
+        deve-se usar ponto (.), devido as normas norte-americanas,
+        sendo que as Brasileiras, é virgula. E, da matriz,
+        são 6 números, dividos em 3 para X, e 3 para Y !
+        Sendo que, escala(scale), rotação(rotate) você também
+        utiliza esses valores graficamente para recolocação. */
+
+    }
+
+    .html5 {
+        top: 30%;
+        left: 65%;
+        -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
+                transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
+        opacity: .6;
+
+    }
+
+    .javascript {
+        top: 15%;
+        left: 60%;
+        -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(-5deg) scale(.25);
+                transform: translate(-50%, -50%) translateZ(1px) rotate(-5deg) scale(.25);
+    }
+
+    .acessibilidade {
+        top: 30%;
+        left: 42%;
+        -webkit-transform: translate(-50%, -50%) translateZ(3px) rotate(-5deg) scale(.25);
+                transform: translate(-50%, -50%) translateZ(3px) rotate(-5deg) scale(.25);
+        opacity: .8;
+    }
+
+    .agilidade {
+        top:10%;
+        right:80%;
+        transform: skew(20deg)
+            rotate(30deg)
+            scale(1.2);
+    }
+
+    .responsivo {
+        top: 40%;
+        left: 40%;
+        -webkit-transform: translate(-50%, -50%) translateZ(3px) rotate(10deg) scale(.25);
+                transform: translate(-50%, -50%) translateZ(3px) rotate(10deg) scale(.25);
+        opacity: .8;
+    }
+
+    .subtitulo-principal {
+        position: relative;
+        left:32%;
+    }
+
+
+    .foto-home {
+        height: 200px;
+        -moz-border-radius: 0 110px;
+        border-radius: 0 110px;
+        box-shadow: 0 0 1em #000;
+
+          /* Para fazer o border radius, e para cada lado, no caso
+        <raios na horizontal> / <raios na vertical>; dá para fazer assim: 50% 10% / 10% 50% 
+            Em caso para deixar fixo em todo o navegadores, tem certas regras como:
+            -moz: mozilla firefox
+            -webkit: google chrome
+            -o: opera
+            -ms: internet explorer (microsoft)*/
+
+        /* colocamos 0 0 para indicar que não há deslocamento
+        nem na horizontal nem na vertical. já que não tem deslocamento,
+        é necessário adicionar um desfoque a ela ou aumentá-la.
+        Como queremos um efeito mais suave, vamos adicionar um
+        desfoque, que é justamente o terceiro número da nossa
+        declaração. E, por fim, adicionamos a cor (preto),
+        chegando na seguinte declaração:*/
+
+      
+    }
+    
+    .saudacao p {
+        font-size: 1.5em;
+        color: #99A;
+        line-height: 1;
+        padding: 2em;
+    }
+    
+    .saudacao-inicio {
+        font-size: 3em;
+        color: #889;
+    }
+    
+    .saudacao-ultima-linha {
+        text-align: right;
+        display: block;
+    }
+    
+    .saudacao strong {
+        font-size: 2em;
+        color: #000;
+    }
+    
+    .saudacao em {
+        color: #851944;
+        font-size: 4em;
+    }
+    
+    .botao-index {
+        font-size: 1.25em;
+        background-color: #851944;
+        color: #FFF;
+        padding: .5em;
+        border: .2em solid black;
+        width: 40ch;
+        margin: 2em auto;
+        display: block;
+        text-align: center;
+    }
+    
+    .secao-inicio {
+        padding: 2em; 
+        position: relative;
+        background-color: #E8E1ED;
+    }
+    
+    .secao-inicio h2 {
+        font-size: 3em;
+        text-shadow: 2px 2px #000;
+        text-transform: uppercase;
+        margin-bottom: .5em;
+    }
+
+    .trabalhos {
+        background-color: #3C1D3D;
+        border-top: .5em solid #000;
+        border-bottom: .5em solid #000;
+    }
+    
+    .trabalhos h2 {
+        color: #FFF;
+    }
+    
+    /* .trabalhos ul {
+        overflow: hidden;
+        border: .5em solid black;
+     } */
+    
+    .trabalhos li {
+        /* float: left;
+           width: 33.333%; */
+        /* Com o caso do display, ou seja o flexbox
+        Não é mais necessário o Float e nem do width */
+        display: flex;
+        flex: 1;
+        border: .5em solid #000;
+    }
+
+    .trabalhos li:first-child {
+        order: 2;
+        transform: scale(1.2);
+    }
+
+    .trabalhos li:nth-child(2) {
+        order: 1;
+    }
+
+    .trabalhos li:last-child {
+        order: 3;
+    }
+    
+    .trabalhos img {
+        width: 100%;
+        /* display: block; */
+    }
+
+    footer {
+        background-color: #000;
+        color: #FFF;
+        padding: 2em;
+        opacity: 0.5;
+        /* Como queremos o elemento
+        semitransparente, e não apenas uma
+        parte dele (o fundo, o texto, a
+        borda etc), usamos a propriedade
+        opacity, que recebe valores de 0
+        (totalmente transparente) a 1
+        (totalmente opaco. */
+    }
+    
+    footer h2 {
+        font-size: 3em;
+    }
+    
+    footer a {
+        color: #F99;
+    }
+    
+    main {
+        width: 100%;
+        padding-bottom: 0;
+        float: none;
+    }
+
+    .saudacao p {
+        font-size: 1.5em;
+        color: #99A;
+        line-height: 1;
+        padding: 2em;
+    }
+
+    .saudacao-inicio {
+        font-size: 3em;
+        color: #889;
+    }
+
+    .saudacao-ultima-linha {
+        text-align: right;
+        display: block;
+    }
+
+    .saudacao strong {
+        font-size: 2em;
+        color: #000;
+    }
+
+    .saudacao em {
+        color: #851944;
+        font-size: 4em;
+        transform: skew(-10deg)
+                rotate(-5deg);
+        display: inline-block; 
+    }
+
+    /* Repare que usamos o display: inline-block
+    para que a transformação funcione e fazemos
+    primeiro o rotate para depois fazer o skew.
+    Se fizermos na ordem inversa, ficaremos com um
+    resultado estranho, apesar de a diferença ser sutil. */
+
+    .botao-index {
+        font-size: 1.25em;
+        background-color: #851944;
+        color: #FFF;
+        padding: .5em;
+        border: .2em solid black;
+        width: 40ch;
+        margin: 2em auto;
+        display: block;
+        text-align: center;
+    }
+
+    .secao-inicio {
+        padding: 2em;
+    }
+
+    .secao-inicio h2 {
+        font-size: 3em;
+        text-transform: uppercase;
+        margin-bottom: .5em;
+    }
+
+    .trabalhos {
+        background-color: #3C1D3D;
+        border-top: .5em solid #000;
+        border-bottom: .5em solid #000;
+    }
+
+    .trabalhos h2 {
+        color: #FFF;
+    }
+
+    .trabalhos ul {
+        overflow: hidden;
+        border: .5em solid black;
+    }
+
+    .trabalhos li {
+        float: left;
+        width: 33.333%;
+    }
+
+    .trabalhos img {
+        width: 100%;
+        display: block;
+    }
+
+    .blog {
+        position: relative;
+        background-image: linear-gradient(45deg, transparent, transparent, 14px, rgba(255,255,255,0.1) 14px,
+        rgba(255,255,255,0.1) 15px, transparent 15px, transparent);
+        background-size: 20px 20px;
+        background-attachment: fixed;
+        background-color: #999;
+        color: #FFF;
+        border-bottom: .5em solid #851944;
+    }
+
+    .blog small {
+        position: relative;
+        top: -2em;
+    }
+
+    .blog li {
+        width: 30%;
+    }
+
+    .blog li a {
+        color: #FCF;
+        padding: .5em;
+        display: block;
+    }
+
+    .blog a:hover + .inicio-post
+    .blog a:focus + .inicio-post {
+        display: block;
+
+    }
+
+    .blog a:hover
+    .blog a:focus {
+        background-color: #F2FFFC;
+        color: #F26;
+    }
+
+    .botao-index:hover
+    .botao-index:focus {
+        color: white;
+        box-shadow: 0 0 1em #FA9;
+        background-color: #C54974;
+    }
+
+    .botao-index {
+        transition: 1s;
+        text-decoration: none;
+    }
+
+
+    .contato {
+        background-color: #851944;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        border-top: 10px solid black;
+        border-bottom: 10px solid black;
+        width: 100%;
+        height: 120px;
+        font-size: 40px;
+        line-height: 115px;
+        padding: 1%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+        label[for="ID"] {
+        position: relative;
+    }
+    
+        .com-icone {
+        position: relative;
+    }
+    
+        .com-icone::after {
+        content: '';
+        width: 2em;
+        height: 2em;
+        background-color: #3C1D3D;
+        color: white;
+        background-size: 50% 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 140%;
+        left: 0;
+    }
+    
+        .com-icone + input {
+        position: relative;
+        left: 2em;
+        width: calc(100% -2em);
+    }
+    
+        .com-icone[for="ID"]::after {
+        background-image: url(C:\Users\Ba_ka\Downloads\usuario.png);
+    }
+    
+        .com-icone[for="Email"]::after {
+        background-image: url(C:\Users\Ba_ka\Downloads\email.png);
+    }
+    
+ /*    
+        label[for="ID"]::after {
+        content: '';
+        background-image: [C:\Users\Ba_ka\Downloads\usuario.png];
+        background-size: 50% 50%;
+        width: 2em;
+        height: 2em;
+        background-position: center;
+        position: absolute;
+        top: 100%;
+        left:0;
+    } */
+
+
+    footer {
+        background-color: #000;
+        color: #FFF;
+        padding: 2em;
+    }
+
+    footer h2 {
+        font-size: 3em;
+    }
+
+    footer a {
+        color: #F99;
+    }
+
+    h1 {
+        text-shadow: 5px 5px #000;
+    }
+
+    /* O primeiro 5px indica que a sobra 
+    é levemente deslocada para a direita
+    e o segundo indica que ela é deslocada para baixo. */
+
+
+    main {
+        width: 100%;
+        padding-bottom: 0;
+        float: none;
+    }
+
+    html, body {
+        height:100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        perspective: 6px;
+        perspective-origin: 50% 160px;
+    }
+
+    .palavras-home, .titulo-principal {
+        transform-style: preserve-3d;
+        
+    }
+
+
+    .titulo-principal {
+        /* background-image: linear-gradient(to bottom, #851944, white 20%, #851944); */
+        background-attachment: fixed;
+        position: relative;
+    }
+
+        /* Ela dá aquele efeito de paralaxe
+        na imagem ou na textura do background.
+        É como se elas estivessem fixas à
+        tela do computador. */
+
+
+    /* Isso acontece porque estamos
+    transladando parte do link para
+    fora da página, e isso vai impedir
+    o efeito de paralaxe de funcionar.
+    Vamos dizer, então, para o navegador
+    ignorar o que fica para fora da página
+    colocando a declaração overflow-x:
+    hidden nos dois elementos (html e body). */

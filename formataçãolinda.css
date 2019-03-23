@@ -1,0 +1,377 @@
+            /*main {
+                float: left;
+                width: 85%;
+                padding-bottom: 80px;
+            } /*TENHO QUE REPARAR POIS NÃO ESTÁ 
+            DE ACORDO*/
+
+
+            span {
+                font-size: 5em;
+                color: purple;
+                text-shadow: 2px 2px black;
+                line-height: 1;
+            }
+
+            main h1 {
+                text-align: center;
+                background-color: #851944;
+                color: white;
+                padding: 25px;
+                border-bottom: 10px solid black;
+                text-transform: uppercase;
+                margin-top: -16%;
+                /* width: calc(100% - 0.9% * 300px); */
+                
+            }
+
+            blockquote {
+                animation: mostra 2s;
+            }
+
+            @keyframes mostra {
+            from {
+                top: 0;
+            }
+            90% {
+                transform: rotate(2deg);
+            }
+            95% {
+                transform: rotate(-2deg);
+            }
+            to {
+                top: 1em;
+            }
+        }
+
+            .titulo-principal {
+                text-align: center;
+                background-color: #851944;
+                color: #FFF;
+                padding: 25px;
+                border-bottom: 10px solid black;
+                font-size: 60px;
+            }
+          
+            body {
+                background-color: #F2FFFC;
+                font-size: 120%;
+                font-family: "Crimson Text", 'Times New Roman', Times, serif;
+                text-align: justify;
+                line-height: 1.5;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+                padding-top: 300px;
+                display: block;
+            }
+            
+            h1,h2 {
+                font-family: "Open Sans Condensed", 'Arial', sans-serif;
+                font-size: 30px;
+            }
+
+            h2 {
+                clear: both;
+            }
+
+           blockquote {
+                background-color: #D9E5E3;
+                padding: 25px;
+                width: 250px;
+                border: 10px inset #C2CCCA;
+                margin: 20px 40px;
+                box-sizing: border-box;
+                border: 10px solid #C2CCCA;
+                border-style: double;
+                border-bottom-color: magenta;
+                border-right-color:aqua;
+                border-top-color: crimson;
+                border-left-color: darkgreen;
+                position: relative;
+                animation: mostra 1s infinite;
+                animation-direction: 2s;
+                animation-timing-function: ease-in;
+
+            }
+
+            blockquote:before {
+
+                content: '“';
+                background-image: url(..\Downloads\aspas.jpg);
+                background-position: top left;
+                background-repeat: no-repeat;
+                position: absolute;
+                font-size: 10em;
+                color: #bbb;
+                line-height: .6;
+                
+            }
+
+            blockquote > p {
+                position: relative;
+            }
+
+            /* Após o CSS3 foi dado que ao por a classe e 
+            ápos o pseudoelemento, deve ser por "::" */
+            /* E para por um contéudo como as aspas, coloca
+            a ' (somente uma aspa) para acresentar */
+            /* O "content" é muito poderoso. Com ele
+            podemos trabalhar com imagens, textos,
+            marcadores, etc, além de combiná-lo com
+            pseudoclasses como o ":hover".
+            Assim como as pseudoclasses, os
+            pseudoelementos" permitem que nosso
+            HTML fique muito mais limpo e semântico. */
+
+            cite {
+                font-style: italic;
+                float: right;
+            }
+
+            /* O comando transition serve para
+            antecipar o tempo de uma transação, assim sendo
+            em casos determinados por segundo (s)
+             transições. Elas podem começar com um
+             atraso. Para isso usamos a
+             propriedade transition-delay */
+
+            .citacao-fiat:hover,
+            .citacao-fiat:focus {
+                box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+                transition: transform 1s linear, box-shadow 2s, ease-in-out;
+                transition-delay: 1s, 0s;
+                animation-play-state: paused;
+                
+            }
+
+            .citacao-petrobras:hover,
+            .citacao-petrobras:focus {
+                box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+            }
+
+            .citacao-fiat:nth-of-type(odd) {
+                float: right;
+                margin-right: 0;
+            }
+
+            .citacao-petrobras:nth-of-type(even) {
+                float: left;
+                margin-left: 0;
+            }
+
+            .citacao-fiat:nth-of-type(odd):hover,
+            .citacao-fiat:nth-of-type(odd):focus {
+            transform: scale(1.2) rotate(5deg);
+            }
+
+            .citacao-petrobras:nth-of-type(even):hover,
+            .citacao-petrobras:nth-of-type(even):focus {
+            transform: scale(1.2) rotate(-5deg);
+            }
+
+            .habilidades {
+                border-collapse: separate;
+                border-spacing: .25em;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin: 1em 0;
+                height:15em;
+                text-align: justify;
+            }
+
+            .habilidades td
+            .habilidades th {
+                padding: 1em;
+            }
+
+            .habilidades td {
+                background-color: #EEE;
+            }
+
+            .habilidades th {
+                font-weight: bold;
+                color: white;
+                background-color: #851944;
+            }
+
+            .habilidades thead th {
+                background-color: #3C1D3D;
+                text-align: center;
+            }
+
+            .habilidades tbody th {
+                text-align: center;
+            }
+
+            .habilidades tbody td {
+                text-align: justify;
+            }
+
+            .habilidades [colspan] {
+                text-align: center;
+                font-style: italic;
+            }
+
+            .habilidades [rowspan] {
+                vertical-align: middle;
+            }
+
+            p {
+                text-align: justify;
+                margin: 20px 0;
+            }
+
+            img, aside {
+                width: 30%;
+                float: right;
+            }
+
+            aside {
+            	text-align: center;
+	            background-color: #3C1D3D;
+                color: #F2FFFC;
+                float: right;
+                box-sizing: border-box;
+                width: 30%;
+                height: -100%;
+                position: absolute;
+                top: 50%;
+                right: 0px;
+                padding-top: 1em 300px;
+            }
+
+            .nomes b {
+                color:chocolate;
+                font-size: 40px;
+                display: inline;
+            }
+                /*Este aqui, é para colocar as bolinhas
+                antes do texto, era apenas para testar,
+                não está obrigatório conforme o que 
+                foi pedido*/
+
+            .nomes nav {
+                text-align: center;
+                display: inline;
+
+            }    
+
+            li a {
+                color: seagreen;
+                right: 60px;
+            }
+            
+            blockquote, aside, footer {
+                padding: 25px;
+            }
+
+            strong {
+                font-weight: bold;
+                display: block;
+            }
+
+            em {
+                font-style: italic;
+            }
+
+            main div {
+                padding: 30px 0;
+                width: 720px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            div {
+                width: 720px;
+                margin: auto;
+            }
+
+            li {
+                display: inline-block;
+            }
+
+            /*Este é para os icones ficarem na horizontal*/
+
+            .icones-sociais::before {
+                content:attr(title);
+
+            }
+
+            .icones-sociais a {
+                width: 40px;
+                height: 40px;
+                font-size: 0;
+                /* text-indent: -99999px; */
+                color: transparent;
+                display: block;
+                /*Sendo o texto, cor ou tamanho da fonte, é o mesmo,
+                mas é preferivel o text-indent devido a países arábes,
+                para esconder o nome dentre os icones*/
+            }
+            
+            .github {
+                background-image: url(github.png);
+            }
+
+            .twitter {
+                background-image: url(twitter.png);
+            }
+
+            .linkedin {
+                background-image: url(linkedin.png);
+            }
+
+            .imagem {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 40px;
+                border: 3px solid black;
+                float: right;
+                height: 50%;
+                box-sizing: border-box;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            article {
+                padding-bottom: 30px;
+                border-bottom: 1px solid #ccc;
+                margin-bottom: 20px;
+            }
+
+            .leia-mais {
+                padding: 8px;
+                margin: 16px;
+                display: block;
+                font-size: 24px;
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+                background-color: #E6E7E8;
+            }
+
+            footer {
+                background-image: radial-gradient(ellipse at bottom left,
+                 rgba(60, 29, 61, 0.8),
+                rgba(60, 29, 61, 0.8) 65%,
+                black 65%,
+                black 70%,
+                transparent 70%,
+                transparent);
+                width:100%;
+                background-size: 25% 100%;
+                background-repeat: no-repeat;
+                color: #F2FFFC;
+                clear: both;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+
+            .clearfix {
+                clear: both;
+            }
+
+
